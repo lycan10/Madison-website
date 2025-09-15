@@ -1,12 +1,23 @@
 import React from 'react'
 import banner from "../../asset/headers/banner.jpg"
 import "./header.css"
+import ReactGA from "react-ga4";
 
 const Header = () => {
   const navigateToShop = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "Click",
+      label: "Shop Button Clicked",
+    });
     window.open("https://madisoncables.com/", "_blank", "noopener,noreferrer");
   };
   const callNow = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "Click",
+      label: "Call Button Clicked",
+    });
     window.location.href = "tel:+12488522055"; 
   };
   return (

@@ -10,10 +10,25 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/Icon-yellow.png" />
- 
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <title>Madison Power Systems</title>
+    <title>Madison Power Systems</title> 
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4NF7KQ9YH3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-4NF7KQ9YH3");
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

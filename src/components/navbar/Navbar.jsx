@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import logo from "../../asset/white-and-Yellow.png"
-
+import ReactGA from "react-ga4";
 import "./navbar.css"
 import { Link, useNavigate } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -16,10 +16,21 @@ const Navbar = () => {
         window.location.href = "/"; // navigates + reloads
       };
       const callNow = () => {
+        ReactGA.event({
+          category: "Button",
+          action: "Click",
+          label: "Call Button Clicked",
+        });
         window.location.href = "tel:+12488522055"; 
+        
       };
      
       const navigateToShop = () => {
+        ReactGA.event({
+          category: "Button",
+          action: "Click",
+          label: "Shop Button Clicked", 
+        });
         window.open("https://madisoncables.com/", "_blank", "noopener,noreferrer");
       };
 

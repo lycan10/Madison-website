@@ -6,6 +6,7 @@ import { SlScreenSmartphone } from "react-icons/sl";
 import CTACard from './CTACard';
 import "./cta.css"
 import emailjs from '@emailjs/browser';
+import ReactGA from "react-ga4";
 
 const CTA = () => {
   
@@ -28,7 +29,11 @@ const CTA = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    ReactGA.event({
+      category: "Button",
+      action: "Click",
+      label: "Contact Form Button Clicked",
+    });
     emailjs
       .sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, {
         publicKey: YOUR_PUBLIC_KEY,

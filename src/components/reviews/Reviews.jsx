@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactGA from "react-ga4";
 import "./reviews.css";
 
 const reviewdata = [
@@ -151,13 +152,18 @@ const Reviews = () => {
   const apiKey = 'YOUR_GOOGLE_API_KEY'; // Replace with your API Key
 
   const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 6);
+    setVisibleCount((prev) => prev + 6); 
   };
   const handleShowLess = () => {
     setVisibleCount(6);
   };
 
   const navigateToShop = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "Click",
+      label: "Shop Button Clicked",
+    });
     window.open("https://madisoncables.com/", "_blank", "noopener,noreferrer");
   };
 
