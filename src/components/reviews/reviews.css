@@ -1,0 +1,457 @@
+.reviews{
+    background-color: black;
+}
+.reviews-container{
+ margin: 0 8rem;
+    height: 100%;
+    position: relative;
+    
+}
+.reviews{
+padding: 2rem 0 12rem;
+}
+.reviews h1{
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 0;
+    margin: 0;
+    text-align: center;
+    margin: 0; 
+}
+
+.reviews-cards-container {
+    column-count: 2;      /* 2 columns */
+    column-gap: 4rem;
+    margin: 6rem 0;
+    transition: all 0.4s ease-in;
+  }
+  
+  .reviews-card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2rem;
+    transition: all 0.4s ease-in;
+  }
+  .reviews-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.reviews-card-top{
+    background-color: rgba(57, 57, 57, 0.5);
+        padding: 3rem;
+        position: relative;
+}
+.reviews-card-top::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;   /* move below the box */
+    left: 5rem;      /* adjust horizontally as needed */
+    width: 0px;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(57, 57, 57, 0.5);; 
+}
+
+.reviews-content{
+margin: 1.5rem 0 0.5rem;
+}
+.reviews-content p{
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2rem;
+    letter-spacing: 0;
+    max-width: 100%;
+    margin: 0; 
+}
+
+.reviews-card-bottom{
+padding-left: 3.8rem;
+margin-top: 3rem;
+margin-bottom: 1rem;
+}
+.reviews-card-bottom h1{
+    color: grey;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 0rem;
+    letter-spacing: 0;
+    max-width: 100%;
+    text-align: left;
+    margin: 0;
+}
+
+.reviews-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.reviews-button p{
+    background-color: var(--background-color);
+    width: 175px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 0rem;
+    letter-spacing: 0;
+    max-width: 100%;
+    color: white;
+    transition: all 0.4s ease-in;
+}
+
+      /* cta */
+.review-cta{
+    background-color: var(--background-color);
+    padding: 4rem 8rem;
+    position: absolute;
+    bottom: -23rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review-cta h1{ 
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 4.7rem;
+    letter-spacing: 0;
+    max-width: 90%;
+    text-align: center;
+    margin: 0;
+}
+.review-cta-button{
+    margin-top: 3rem;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.review-cta-button p{
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+@media screen and (max-width: 1550px) {
+    .reviews-container{
+        margin: 0 6rem;
+           height: 100%;
+           position: relative; 
+       }
+       .reviews{
+        padding: 2rem 0 10rem;
+        }
+        .reviews-cards-container {
+            column-count: 2;      /* 2 columns */
+            column-gap: 3rem;
+            margin: 3rem 0;
+            transition: all 0.4s ease-in;
+          }
+       
+}
+@media screen and (max-width: 1200px) {
+    .reviews-container{
+        margin: 0 3rem;
+           height: 100%;
+           position: relative; 
+       }
+       .reviews{
+        padding: 2rem 0 9rem;
+        }
+
+        .reviews-cards-container {
+            column-count: 2;      /* 2 columns */
+            column-gap: 3rem;
+            margin: 3rem 0;
+            transition: all 0.4s ease-in;
+          }
+          .reviews h1{
+            color: white;
+            font-family: var(--font-family);
+            font-weight: 300;
+            font-size: 33px;
+            letter-spacing: 0;
+            margin: 0;
+            text-align: center;
+            margin: 0; 
+        }
+        .reviews-card-top{
+            background-color: rgba(57, 57, 57, 0.5);
+                padding: 2rem;
+                position: relative;
+        }
+        .reviews-card-bottom h1{
+            color: grey;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 0rem;
+            letter-spacing: 0;
+            max-width: 100%;
+            text-align: left;
+            margin: 0;
+        }
+        .review-cta{
+            background-color: var(--background-color);
+            padding: 4rem 8rem;
+            position: absolute;
+            bottom: -20rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .review-cta h1{ 
+            color: white;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 3.3rem;
+            letter-spacing: 0;
+            max-width: 100%;
+            text-align: center;
+            margin: 0;
+        }
+        .review-cta-button{
+            margin-top: 3rem;
+            background-color: black;
+            width: 125px;
+            height: 50px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+       
+}
+@media screen and (max-width: 960px) {
+    .reviews-container{
+        margin: 0 2rem;
+           height: 100%;
+           position: relative; 
+       }
+       .reviews{
+        padding: 1rem 0 8rem;
+        }
+
+        .reviews-cards-container {
+            column-count: 2;      /* 2 columns */
+            column-gap: 2rem;
+            margin: 3rem 0;
+            transition: all 0.4s ease-in;
+          }
+          .reviews h1{
+            color: white;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 27px;
+            letter-spacing: 0;
+            margin: 0;
+            text-align: center;
+            margin: 0; 
+        }
+        .reviews-card-top{
+            background-color: rgba(57, 57, 57, 0.5);
+                padding: 1.5rem;
+                position: relative;
+        }
+        .reviews-card-bottom h1{
+            color: grey;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 0rem;
+            letter-spacing: 0;
+            max-width: 100%;
+            text-align: left;
+            margin: 0;
+        }
+        .review-cta{
+            background-color: var(--background-color);
+            padding: 4rem 6rem;
+            position: absolute;
+            bottom: -17rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .review-cta h1{ 
+            color: white;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 27px;
+            line-height: 2.7rem;
+            letter-spacing: 0;
+            max-width: 100%;
+            text-align: center;
+            margin: 0;
+        }
+        .review-cta-button{
+            margin-top: 3rem;
+            background-color: black;
+            width: 125px;
+            height: 50px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+       
+}
+@media screen and (max-width: 500px) {
+    .reviews-container{
+        margin: 0 1.5rem;
+           height: 100%;
+           position: relative; 
+       }
+       .reviews{
+        padding: 1rem 0 6rem;
+        }
+
+        .reviews-cards-container {
+            column-count: 1;      /* 2 columns */
+            column-gap: 0rem;
+            margin: 3rem 0 1rem;
+            transition: all 0.4s ease-in;
+          }
+          .reviews h1{
+            color: white;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 27px;
+            letter-spacing: 0;
+            margin: 0;
+            text-align: center;
+            margin: 0; 
+        }
+        
+        .reviews-card-top{
+            background-color: rgba(57, 57, 57, 0.5);
+                padding: 1rem;
+                position: relative;
+        }
+        .reviews-card-top::after{
+            content: "";
+            position: absolute;
+            bottom: -20px;   /* move below the box */
+            left: 2rem;      /* adjust horizontally as needed */
+            width: 0px;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid rgba(57, 57, 57, 0.5);; 
+        }
+        .reviews-card-bottom{
+            padding-left: 1.5rem;
+            margin-top: 3rem;
+            margin-bottom: 0.5rem;
+            }
+        .reviews-card-bottom h1{
+            color: grey;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 0rem;
+            letter-spacing: 0;
+            max-width: 100%;
+            text-align: left;
+            margin: 0;
+        }
+        .reviews-button p{
+            background-color: var(--background-color);
+            width: 150px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 0rem;
+            letter-spacing: 0;
+            max-width: 100%;
+            color: white;
+            transition: all 0.4s ease-in;
+        }
+        .review-cta{
+            background-color: var(--background-color);
+            padding: 2rem 2rem;
+            position: absolute;
+            bottom: -12rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .review-cta h1{ 
+            color: white;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 2.2rem;
+            letter-spacing: 0;
+            max-width: 100%;
+            text-align: center;
+            margin: 0;
+        }
+        .review-cta-button{
+            margin-top: 2rem;
+            background-color: black;
+            width: 125px;
+            height: 50px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .review-cta-button p{
+            color: white;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+       
+}

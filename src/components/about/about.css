@@ -1,0 +1,128 @@
+.about{
+
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 6rem 8rem;
+}
+.about-title{
+    margin-right: 12rem;
+}
+.about-title h1{
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 0;
+    margin: 0;
+}
+.about-content{
+
+}
+.about-content p{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-learn-more{
+    border: 1.5px solid var(--background-color);
+    width: 150px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 3px;
+}
+.about-learn-more p{
+    font-family: var(--font-family);
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+@media screen and (max-width: 1550px) {
+    .about-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 6rem 6rem;
+    }
+  
+}
+@media screen and (max-width: 1200px) {
+    .about-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 3rem 3rem 4rem;
+    }
+    .about-title{
+        margin-right: 6rem;
+    }
+    .about-title h1{
+        font-family: var(--font-family);
+        font-weight: 300;
+        font-size: 33px;
+        letter-spacing: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .about-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 2rem 2rem 2rem;
+    }
+    .about-title{
+        margin-right: 6rem;
+    }
+    .about-title h1{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 27px;
+        letter-spacing: 0;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 1.5rem 1.5rem 2rem;
+    }
+    .about-title{
+        margin-right: 0rem;
+        margin-bottom: 0.75rem;
+    }
+    .about-title h1{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 27px;
+        letter-spacing: 0;
+        margin: 0;
+    }
+    .about-learn-more{
+        border: 1.5px solid var(--background-color);
+        width: 150px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center ;
+        border-radius: 3px;
+        margin-top: 2rem;
+    }
+}
