@@ -38,14 +38,32 @@
     justify-content: center;
     align-items: center ;
     border-radius: 3px;
+    cursor: pointer;
 }
-.about-learn-more p{
+
+.about-extra {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.7s ease, opacity 0.7s ease;
+  }
+  
+  .about-extra.open {
+    max-height: 500px; /* should be taller than content */
+    opacity: 1;
+  }
+  .about-learn-more p{
     font-family: var(--font-family);
     margin: 0 !important;
     padding: 0 !important;
     font-weight: 600;
     font-size: 14px;
+    transition: color 0.3s ease;
 }
+
+  
+
+  
 @media screen and (max-width: 1550px) {
     .about-container{
         display: flex;
